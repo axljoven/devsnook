@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Devsnook</title>
+
+    <!-- UIkit CSS | CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="main">
+    <!-- Top Header -->
+    <header id="main-header" class="" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav id="desktop-navbar" class="navbar" uk-navbar>
+                <div class="uk-navbar-center">
+
+                    <!-- Left Items -->
+                    <div class="uk-navbar-center-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#main" uk-scroll>Home</a></li>
+                            <li><a href="#about-us" uk-scroll>About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Brand Logo -->
+                    <a class="uk-navbar-item navbar__brand" href="#main" uk-scroll><img src="assets/images/logo.svg" alt=""></a>
+
+                    <!-- Right Items -->
+                    <div class="uk-navbar-center-right">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#how-we-work" uk-scroll>How we work</a></li>
+                            <li><a href="#contact-us" uk-scroll>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div> <!-- uk-navbar-center -->
+            </nav> <!-- uk-navbar-container -->
+
+            <!-- mobile navbar -->
+            <nav id="mobile-navbar" class="navbar" uk-navbar>
+                <!-- Brand Logo -->
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item navbar__brand fw-bold" href="#main" uk-scroll>
+                        <img src="assets/images/logo.svg" alt="" class=""> 
+                        <div class="navbar__brand-name uk-margin-small-left fw-bold"><span class="c-blue fw-inherit">DEVS</span>NOOKS</div>
+                    </a>
+                </div>
+                <!-- Toggle Menu -->
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="javascript:void(0)"></a>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu">
+                <div class="uk-container">
+                    <ul class="uk-nav">
+                        <li><a href="#main" uk-scroll><span class="uk-icon-link" uk-icon="home"></span> Home</a></li>
+                        <li><a href="#about-us" uk-scroll><span class="uk-icon-link" uk-icon="question"></span> About Us</a></li>
+                        <li><a href="#how-we-work" uk-scroll><span class="uk-icon-link" uk-icon="code"></span> How we work</a></li>
+                        <li><a href="#contact-us" uk-scroll><span class="uk-icon-link" uk-icon="mail"></span> Contact Us</a></li>
+                    </ul>
+                    <div class="mobile-menu_close-btn">
+                        <a href="javascript:void(0)"><span class="uk-icon-link" uk-icon="chevron-up"></span></a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!-- Floating navigation -->
+    <!-- NOTE: for going to the top of the page -->
+    <nav class="floating-nav uk-box-shadow-small">
+        <a href="#main" uk-scroll><span class="uk-icon-link" uk-icon="chevron-up"></span></a>
+    </nav>
+
+    
+
+    <!-- Banner -->
+    <section id="banner" class="banner section">
+        <div class="uk-container uk-container-medium">
+            <div uk-grid>
+
+                <!-- Content -->
+                <div class="uk-width-1-2@m section__content">
+                    <h1 class="brand-name text-shadow"><span class="fw-inherit fs-inherit c-blue">Devs</span>nook</h1>
+                    <div class="banner__content">
+                        <p>We build websites on <span class="changeable-1 c-blue fw-bold">creativity</span> and <span class="changeable-2 c-blue fw-bold">wide imagination</span>.</p>
+                    </div>
+                    <button class="button banner__cta uk-button box-shadow">Inquire Now</button>
+                </div>
+
+                <!-- Images -->
+                <div class="uk-width-1-2@m section__aside uk-margin-auto-vertical">
+                    <!-- <img src="assets/images/banner images/banner-img-2.jpg" class="banner__image uk-box-shadow-small" alt=""> -->
+                    <img src="assets/images/banner images/banner-img.svg" class="banner__image uk-box-shadow-small" alt="" uk-parallax="y: 0, -450">
+                </div>
+
+            </div> <!-- uk-grid -->
+        </div> <!-- uk-container -->
+
+        <!-- Decorations -->
+        <div class="decorations">
+            <div class="decor-box" uk-parallax="y: 0, 300; opacity: 1, 0"></div>
+            <div class="decor-little-box" uk-parallax="y: 0, 100"></div>
+            <div class="decor-line"></div>
+        </div>
+    </section> <!-- banner -->
+
+
+
+    <!-- Who we are -->
+    <section id="about-us" class="about-us section uk-box-shadow-small">
+        <div class="uk-container uk-container-small">
+            <div uk-grid>
+
+                <!-- Image -->
+                <div class="uk-width-1-2@s section__aside uk-text-center">
+                    <img src="assets/images/logo-large.svg" alt="" uk-parallax="y: 0, -50; opacity: 1, 0.5">
+                </div>
+
+                <!-- Cnntent -->
+                <div class="uk-width-1-2@s section__content">
+                    <h2>Who we are</h2>
+                    <p>
+                        We are a team of young software engineers and web
+                        designers committed to deliver quality and cost-effective
+                        websites to our clients. Focusing closely on the client’s
+                        goals, we work relentlessly to provide them with websites
+                        that create an intellectual connection with their audience,
+                        and ensure interactive user experiences.
+                    </p>
+                </div>
+
+            </div> <!-- uk-grid -->
+
+            <!-- Decorations -->
+            <div class="decorations">
+                <div class="decor-box" uk-parallax="y: 0, 500; opacity: 1, 0"></div>
+                <div class="decor-line"></div>
+            </div>
+        </div> <!-- uk-container -->
+    </section> <!-- about-us -->
+
+
+
+    <!-- How we work -->
+    <section id="how-we-work" class="how-we-work section">
+        <div class="uk-container uk-container-small">
+            <!-- Header  -->
+            <div class="section__header uk-text-center">
+                <h2 class="">How we work</h2>
+            </div> <!-- header -->
+            <!-- Content | Slider Container -->
+            <div class="section__content uk-position-relative uk-visible-toggle uk-dark" uk-slider>
+                <!-- Sliders -->
+                <div class="uk-slider-container">
+                    <ul class="uk-slider-items uk-grid">
+                        <!-- Slider 1 | We Plan -->
+                        <li class="uk-width-1-1 uk-text-right">
+                            <div class="uk-grid uk-child-width-1-2@s">
+                                <!-- Slide Content -->
+                                <div class="slider__content">
+                                    <h3 class="fw-bold text-uppercased"><span class="fw-bold c-blue fs-inherit">01.</span> We Plan</h3>
+                                    <p>
+                                        At Devsnook, we will work hand and hand with you to
+                                        help you on the research and planning stage. We will
+                                        listen to your ideas, keep relevant details on file,
+                                        and then add our own artistic visions to come up
+                                        with a website that works well for your business.
+                                    </p>
+                                </div>
+
+                                <!-- Slide image -->
+                                <div class="slider__aside">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slider 2 | We Design -->
+                        <li class="uk-width-1-1 uk-text-right">
+                            <div class="uk-grid uk-child-width-1-2@s">
+                                <!-- Slide Content -->
+                                <div class="slider__content">
+                                    <h3 class="fw-bold text-uppercased"><span class="fw-bold c-blue fs-inherit">02.</span> We Design</h3>
+                                    <p>
+                                        We design websites and get projects done on
+                                        creativity and wide imagination. You can count on us
+                                        to work on a user-friendly, aesthetically appealing,
+                                        and mobile responsive website designs. Our team
+                                        ensures great user experience for your business
+                                        customers.
+                                    </p>
+                                </div>
+
+                                <!-- Slide image -->
+                                <div class="slider__aside">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slider 3 | We Develop  -->
+                        <li class="uk-width-1-1 uk-text-right">
+                            <div class="uk-grid uk-child-width-1-2@s">
+                                <!-- Slide Content -->
+                                <div class="slider__content">
+                                    <h3 class="fw-bold text-uppercased"><span class="fw-bold c-blue fs-inherit">03.</span> We Develop</h3>
+                                    <p>
+                                        Using the skills and talents we master, our team of
+                                        web developers codes and transforms the design into
+                                        a fully programmed website. We are dedicated to
+                                        creating smart and customized functionalities that
+                                        guarantee an easy to use website.
+                                    </p>
+                                </div>
+
+                                <!-- Slide image -->
+                                <div class="slider__aside">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slider 4 | We launch -->
+                        <li class="uk-width-1-1 uk-text-right">
+                            <div class="uk-grid uk-child-width-1-2@s">
+                                <!-- Slide Content -->
+                                <div class="slider__content">
+                                    <h3 class="fw-bold text-uppercased"><span class="fw-bold c-blue fs-inherit">04.</span> We Launch</h3>
+                                    <p>
+                                        Before launching the website, we will make sure that
+                                        it has gone through a thorough process of tests and
+                                        reviews (e.g., forms, scripts, and code validation).
+                                        We will make sure  that the code follows the current
+                                        web standards before the site goes live.
+                                    </p>
+                                </div>
+
+                                <!-- Slide image -->
+                                <div class="slider__aside">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul> <!-- sliders -->
+                </div> <!-- uk-slider-container -->
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div> <!-- slider-controls -->
+
+                <!-- Slider Nav -->
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-large "></ul>
+            </div> <!-- uk slider | slider container -->
+        </div> <!-- uk-container -->
+
+        <!-- Decorations -->
+        <div class="decorations">
+            <div class="decor-box" uk-parallax="y: 0, -350"></div>
+            <div class="decor-line-vertical-1" uk-parallax="y: 0, -180"></div>
+            <div class="decor-line-vertical-2"></div>
+        </div>
+    </section> <!-- how-we-work -->
+
+    <!-- Contact us -->
+    <section id="contact-us" class="contact-us section">
+        <div class="uk-container uk-container">
+            <div class="section__content uk-margin-auto uk-margin-auto-vertical uk-text-center uk-box-shadow-small" uk-parallax="y: 0, -50">
+                <header>
+                    <h2>Contact Us</h2>
+                    <p class="uk-text-lead uk-margin-remove-bottom fw-bold">Interested? Let us talk about your project!</p>
+                    <p class="uk-text-small uk-margin-small-top">Fill out the quick form below to start a conversation.<br/> We will reply promptly.</p>
+                </header>
+                <form action="">
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Name">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Email">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Phone Numer">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Business">
+                    </div>
+                    <button class="uk-button uk-button-primary button w-100">Submit</button>
+                </form>
+
+                <!-- Decorations -->
+                <div class="decorations decorations__inner">
+                    <div class="decor-hline"></div>
+                    <div class="decor-vline"></div>
+                </div>
+            </div> <!-- section__content -->
+        </div> <!-- uk-container -->
+
+        <!-- Decorations | Background -->
+        <div class="decorations decorations__background">
+            <div class="decor-box"></div>
+            <div class="decor-line"></div>
+        </div>
+    </section> <!-- contact-us -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="uk-container uk-container uk-text-center">
+            <small>Copyright &copy; 2018 Devsnook</small>
+        </div>
+    </footer>
+
+    <!-- Decortation | Decor for the whole body | Grayish background color -->
+    <div class="decorations">
+        <div class="container"></div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- jQuery is required | CDN -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- UIkit JS | CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

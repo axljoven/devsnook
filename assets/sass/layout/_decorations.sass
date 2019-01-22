@@ -1,0 +1,110 @@
+// OVerall decorations class ---------------------------------------------------
+// NOTE: Should always be inside .section
+.decorations
+    z-index: -1
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    
+    *
+        position: absolute
+
+// Whole body ------------------------------------------------------------------
+body > .decorations
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 80%
+    margin-left: auto
+    margin-right: auto
+    background-color: rgba(222,222,222,0.1)
+
+// Banner decors ---------------------------------------------------------------
+.banner .decorations
+    .decor-box
+        width: 18%
+        height: 37%
+        background-color: $c-decor-gray
+        top: 10%
+        left: 42%
+
+    .decor-little-box
+        width: 10px
+        height: 100px
+        background-color: $c-decor-gray
+        top: 6%
+        left: 0
+
+    .decor-line
+        width: 12%
+        height: 1px
+        background-color: $c-black
+        top: 19%
+        left: 0
+
+// About Us decors -------------------------------------------------------------
+.about-us .decorations
+    overflow: hidden
+    z-index: 1
+    .decor-box
+        width: 35%
+        height: 50%
+        right: 0
+        bottom: 10%
+        background-color: $c-decor-gray
+
+    // .decor-line
+    //     position: absolute
+    //     height: 1px
+    //     width: 30%
+    //     right: 0
+    //     top: 28%
+    //     background-color: $c-black
+
+// How we work decors ----------------------------------------------------------
+.how-we-work .decorations
+    .decor-box
+        width: 40%
+        height: 180px
+        background-color: $c-decor-gray
+        top: 0
+        left: 0
+    .decor-line-vertical-1
+        top: 0
+        left: 15%
+        height: 230px
+        width: 1px
+        background-color: $c-black
+
+// Contact us ------------------------------------------------------------------
+.contact-us
+    .section__content
+        position: relative
+    .decorations__inner
+        .decor-vline
+            top: 0
+            right: 60px
+            height: 40px
+            width: 1px
+            background-color: $c-black
+        .decor-hline
+            top: 60px
+            right: 0
+            width: 40px
+            height: 1px
+            background-color: $c-black
+
+    .decorations__background
+        .decor-line
+            top: 29.5%
+            width: 30%
+            height: 1px
+            background-color: $c-black
+        .decor-box
+            bottom: 20%
+            right: 0
+            width: 200px
+            height: 40%
+            background-color: $c-decor-gray

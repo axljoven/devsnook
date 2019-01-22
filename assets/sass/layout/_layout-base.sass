@@ -1,0 +1,116 @@
+// Main header -----------------------------------------------------------------
+#main-header
+    border-top: 2px solid $c-blue
+    position: relative
+    
+    #mobile-navbar
+        display: none
+
+    // .mobile-menu
+    //     position: relative
+
+// Banner ----------------------------------------------------------------------
+.banner
+    margin-top: 20px
+    max-height: 700px
+    overflow: hidden
+    .section__content
+        transform: translateY(8%)
+
+        // Overall
+        h1,
+        .brand-name,
+        .banner__content,
+        .banner__cta
+            position: relative
+
+        // Banner header | brand name
+        h1
+            left: 25%
+            font-size: 3.4rem
+
+        // Banner content | paragraphs
+        .banner__content
+            left: 35%
+            margin-bottom: 30px
+            color: $c-black
+            width: 60%
+            p
+                font-size: 1.5rem
+            span
+                font-size: inherit
+
+        // Button | CTA
+        .banner__cta
+            left: 40%
+            width: 15rem
+            border-left: 10px solid $c-black
+
+// About Us --------------------------------------------------------------------
+.about-us
+    background-color: $c-white
+    // box-shadow: 0px 6px 32px 10px rgba(0,0,0,0.05)
+
+    // Image
+    .section__aside img
+        z-index: 2
+        position: relative
+        top: 0px
+        width: 60%
+        margin-top: 40px
+
+    // Content
+    .section__content
+        z-index: 3
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        p:last-child
+            margin-bottom: 20px
+
+// How we work -----------------------------------------------------------------
+.how-we-work
+    padding-top: 100px
+    .section__header
+        margin-bottom: 40px
+    .section__content
+        .slider__content
+            display: flex
+            flex-direction: column
+            justify-content: center
+            p
+                padding-left: 20%
+            h3
+                color: $c-black
+
+    .slider-controls
+        position: relative
+        top: -150px
+
+    .uk-position-center-left,
+    .uk-position-center-right
+        position: absolute
+        transform: none
+        padding: 10px 15px
+        
+
+    .uk-position-center-left
+        left: -40px
+    .uk-position-center-right
+        right: -40px
+
+// Contact us ------------------------------------------------------------------
+.contact-us
+    .section__content
+        background-color: $c-white
+        width: 80%
+        box-sizing: border-box
+        padding: 120px 140px
+
+.footer
+    background-color: $c-black
+    padding-top: 40px
+    padding-bottom: 40px
+    small
+        color: $c-white

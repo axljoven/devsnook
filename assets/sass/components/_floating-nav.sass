@@ -1,0 +1,19 @@
+// Floating nav -----------------------------------------------------------------------
+.floating-nav
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 1000
+    background-color: $c-blue
+    border-radius: 4px
+    transition: all 0.2s
+
+    a 
+        display: inline-block
+        padding: 10px
+        svg *
+            color: white
+
+    &:hover
+        transform: translateY(3px)
+        background-color: darken($c-blue, 10)
